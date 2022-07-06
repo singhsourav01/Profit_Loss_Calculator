@@ -9,6 +9,7 @@ var submitBtn = document.querySelector('#submit-btn');
 
 var outputBox = document.querySelector('#outputbox');
 
+
 //Till her  e we have selected all elements
 
 submitBtn.addEventListener('click', submiHandler);
@@ -17,6 +18,7 @@ function submiHandler() {
     var ip = "";
     if (initialPrice) {
         ip = initialPrice.value;
+        
     }
     var qty = "";
     if (stocksQuantity) {
@@ -35,18 +37,34 @@ function calculateProfitAndLoss(initial, quantity, current){
         //Loss 
         var loss = (initial - current)*quantity;
         var lossPercentage = (loss/initial)*100;
-        showOutput(`Hey the loss is ${loss} and the percent is ${lossPercentage}%`);
+        if (current && initial !== ""){
+            showOutput(`Hey the loss is ${loss} and the percent is ${lossPercentage}%`);
+        }else{
+            showOutput('Invalid Credential')
+        }
+        
     }
     else if(current> initial){
         //Profit 
         var profit = (current - initial)*quantity;
         var profitPercentage = (profit/initial)*100;
-        showOutput(`Hey the Profit is ${profit} and the percent is ${profitPercentage}%`);        
+        if (current && initial !== ""){
+            showOutput(`Hey the Profit is ${profit} and the percent is ${profitPercentage}%`);
+        }else{
+            showOutput('Invalid Credential')
+        }
+  
     }
-    else{
-        //Constant
-        showOutput('No Profit, No Loss');
-    }
+    else { 
+        console.log(current, initial, quantity)
+        if(current && initial && quantity !== ""){
+            console.log(current, initial, quantity);
+            showOutput(`No Profit, No Loss `);
+        }else{
+            showOutput(`Invalid Credential`);
+        }
+   
+    }  
 }
 
 function showOutput(msg){   

@@ -112,4 +112,13 @@ html, body{
         margin-top: 8rem;
     }
 
+    #output-box{
+        width: 30vw;
+        margin: 0px 0px 0px 0px;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        border-radius: 2px;
+        
+    }
+
 }
