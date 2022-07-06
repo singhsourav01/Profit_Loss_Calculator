@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+label{
+    display: block;
+    padding-bottom: 1rem;
+}
