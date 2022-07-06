@@ -61,7 +61,7 @@ function calculateProfitAndLoss(initial, quantity, current){
             console.log(current, initial, quantity);
             showOutput(`No Profit, No Loss `);
         }else{
-            showOutput(`Invalid Credential`);
+            showOutput(`Invalid, try again`);
         }
    
     }  
