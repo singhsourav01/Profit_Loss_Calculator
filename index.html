@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profit-Loss</title>
+    <title>Profit-Loss in Stock</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Profit-Loss</h1>
-    <main>
-        <label for="intial-price">Intial Price
-        <input type="number" name="" id="initial-price" placeholder="Enter Initial Price Here">
-        </label>
-
-        <label for="stocks-quantity">Quantity of Stocks
-        <input type="number" name="" id="stocks-quantity" placeholder="Enter the number of Stocks bought">
-        </label>
-
-        <label for="current-price">Current Price
-        <input type="number" name="" id="current-price" placeholder="Enter the current price of stocks">
-        </label>
-
-        <button id="submit-btn">Submit</button>
-
-        <div id="output-box"></div>
-        
-    </main>
+    <div class="container">
+        <h1 id="main_heading">Profit-Loss in Stocks</h1>
+        <main>
+            <label for="intial-price"><h1 id="heading">Intial Price</h1>
+            </label>
+            <input type="number" name="" id="initial-price" placeholder="Initial Price">
+            
+    
+            <label for="stocks-quantity"><h1 id="heading">Quantity of Stocks</h1></label>
+            <input type="number" name="" id="stocks-quantity" placeholder="Number of Stocks">
+            
+    
+            <label for="current-price"><h1 id="heading">Current Price</h1></label>
+            <input type="number" name="" id="current-price" placeholder="Current price">
+    
+            <button id="submit-btn">Submit</button>
+    
+            <div id="output-box"></div>
+            
+        </main>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

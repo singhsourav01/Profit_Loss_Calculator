@@ -45,7 +45,7 @@ function calculateProfitAndLoss(initial, quantity, current){
     }
     else{
         //Constant
-        showOutput('No pain no gain and no gain no pain');
+        showOutput('No Profit, No Loss');
     }
 }
 
